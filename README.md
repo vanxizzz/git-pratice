@@ -3,6 +3,7 @@ git练习
 
 工作区 -> 暂存区 -> 版本库 -> 远程仓库
 
+## 基本操作
 - 克隆远程仓库
 git clone
 
@@ -51,6 +52,27 @@ git rm -f test.html或git rm -f .
 2. 删除暂存区
 git rm --cached test.html
 
+
+## 远程仓库
+- 查看仓库名
+git remote
+
+- 查看仓库地址
+git remote -v
+
+- 修改仓库名（origin变成newOrigin）
+git remote rename origin newOrigin
+
+- 添加远程仓库
+git remote add 新仓库名 仓库地址
+如：git remote add origin http://xxxx
+
+- 删除仓库
+git remote rm 仓库名
+
+- push代码到远程仓库
+git push 仓库名 分支
+如：git push origin master
 
 
 
