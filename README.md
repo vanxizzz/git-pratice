@@ -31,7 +31,7 @@ commit 6b221d8b.... (HEAD -> master)
 参数：--oneline 简化版信息
 
 
-- 回退版本（会改变工作目录）
+- 回退版本（撤销本次提交）
 git reset --hard 版本号
 如：git reset --hard 6b221d
 
@@ -39,8 +39,18 @@ git reset --hard 版本号
 git reflog
 
 - 撤销操作
-1、回退版本
-2、
+1. 回退版本
+2. 撤销工作区的文件内容
+如：git checkout test.html或git checkout .
+3. 撤销存放在**暂存区**的内容
+git reset HEAD test.html或git reset HEAD .
+
+- 删除文件
+1. 删除暂存区 + 工作区
+git rm -f test.html或git rm -f .
+2. 删除暂存区
+git rm --cached test.html
+
 
 
 
