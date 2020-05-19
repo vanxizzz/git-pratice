@@ -110,6 +110,21 @@ a344ddc ←←←←
 （dev）
     
 
+3. 查看分支
+git branch
+
+4. 删除分支
+git branch -d 分支名
+
+5. 创建分支
+git branch 分支名
+
+6. 切换分支
+git checkout 分支名
+
+7. 创建并切换分支
+git checkout -b 分支名
+
 
 ## 注意事项
 1. 切换分支前一定要commit或stash
