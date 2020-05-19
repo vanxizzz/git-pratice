@@ -127,7 +127,10 @@ git checkout -b 分支名
 
 8. 推送分支到远程分支（远程分支名和推送的分支名一样）
 语法：git push origin 分支名
-解释：推送到远程地址（origin）上的某个分支
+
+git push origin dev
+解释：推送本地的dev分支到origin的dev分支上
+
 **并不一定要切换到某个分支才能推送该分支**
 （假设当前在master分支）
 git push origin dev;
