@@ -75,5 +75,15 @@ git remote rm 仓库名
 git push 仓库名 分支
 如：git push origin master
 
+## 分支
 
+分支快速合并(fast-forword)：（在dev分支合并代码后直接把master指针指向合并后的版本号a344ddc）
+（将master的指针直接移动到了分支所新创建的版本上）
+（假设当前是在dev分支）
+git commit -m "dev"(版本号：a344ddc....)
+git checkout master
+**git merge dev** 后
+**HEAD 👉 master 👉 a344ddc....  👈 dev**
+
+非快速合并：git merge --no-ff 
 
