@@ -87,3 +87,7 @@ git checkout master
 
 非快速合并：git merge --no-ff 
 
+
+
+## 注意事项
+1. 切换分支前一定要commit或stash
