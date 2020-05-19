@@ -32,6 +32,8 @@ commit 6b221d8b.... (HEAD -> master)
 提交 版本号 (当前指针 )
 参数：--oneline 简化版信息
 
+git log --graph --pretty=oneline --abbrev-commit
+
 
 - 回退版本（撤销本次提交）
 git reset --hard 版本号
@@ -96,7 +98,7 @@ git checkout master
 2. 非快速合并：（即master指针不是指向dev提交的版本号，而是指向一个新的版本号）
 
 ...
-**git merge --no-ff dev**（产生一个新的版本号：90b23e...）
+**git merge --no-ff dev -m "修复"**（产生一个新的版本号：90b23e...）
 
 
          （master）
