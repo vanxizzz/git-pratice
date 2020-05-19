@@ -125,6 +125,8 @@ git checkout 分支名
 7. 创建并切换分支
 git checkout -b 分支名
 
+8. 推送当前分支到远程分支
+**注意**：一定要
 
 ## 注意事项
 1. 切换分支前一定要commit或stash
